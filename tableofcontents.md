@@ -4,8 +4,8 @@ title: Table of Contents
 page_class: bk-toc
 ---
 
-Table of Contents
-================
+Part 1
+------
 
 <ul>
 {% for post in site.posts reversed %}

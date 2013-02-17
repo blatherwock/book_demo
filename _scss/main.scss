@@ -36,6 +36,9 @@ a {
 }
 header.bk-main {
   text-align: center;
+  h1 {
+    margin: 0;
+  }
   nav {
     ul {
       width: 100%;
@@ -57,13 +60,27 @@ footer.bk-main {
   padding-bottom: 40px;
 }
 /* Specific Pages */
+/* Cover */
+.bk-cover {
+  h1 {
+    display: block;
+    width: 400px;
+    height: 500px;
+    font-size: 400%;
+    padding-top: 100px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+  }
+}
 /* Table of Contents */
 .bk-toc {
+  margin-top: 30px;
   text-align: center;
   li {
     margin: 5px;
   }
 }
+/* Chapters */
 .bk-chapter {
   h1 {
     text-align: center;
@@ -90,16 +107,32 @@ a {
 }
 
 header.bk-main {
-  background-color: #787863;
+  background-color: #DAD8CA;
   color: #DDDDDF;
+  h1 {
+    color: #252527;
+  }
   font-weight: 400;
   border: {
     style: solid;
-    color: #252526;
+    color: #DDDDDF;
     width: 0 1px 1px 1px;
   }
 }
-
+.bk-cover {
+  h1 {
+    background-color: #541010;
+    border: 1px solid #321;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px 1px #000210;
+  }
+  a {
+    color: #DDDDDF;
+    &:hover, &:active, &:focus {
+      text-decoration: none;
+    }
+  }
+}
 .bk-toc {
   font-family: 'Philosopher', sans-serif;
 }
