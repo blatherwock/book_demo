@@ -1,34 +1,13 @@
 <!doctype html>
 <html>
-  <head>
-    <title>{{page.title}} - Nullam Imperdiet</title>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.8.1/build/cssreset/cssreset-min.css">
-    <link href="/css/main.css" media="screen" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic|Philosopher' rel='stylesheet' type='text/css'>
-    <script defer="defer" scr="/js/application.js" type="text/javascript"></script>
-
-    <!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+  {% include head.html  %}
   <body>
     <div class="bk-site_wrapper">
-      <header class="bk-main">
-	<h1>Nullam Imperdiet</h1>
-	<nav>
-	  <ul>
-	    <li><a href="/index.html">Cover</a></li>
-	    <li><a href="/tableofcontents.html">Table of Contents</a></li>
-	    <li><a href="/about.html">About</a></li>
-	  </ul>
-	</nav>
-      </header>
+      {% include header.html %}
       <div class="bk-content {{ page.page_class }}">
 	{{content}}
       </div>
-      <footer class="bk-main">
-	<span>Copyright &copy; {{site.time | date: '%Y' }} Joseph Baker. All rights reserved.</span>
-      </footer>
+      {% include footer.html %}
     </div>
   </body>
 </html>

@@ -46,10 +46,11 @@ footer.bk-main {
   width: 100%;
   position: absolute;
   bottom: 15px;
-  font-size: 65%; }
+  font-size: 65%;
+  clear: both; }
 
 .bk-content {
-  padding-bottom: 40px; }
+  padding-bottom: 80px; }
 
 /* Specific Pages */
 /* Cover */
@@ -72,8 +73,16 @@ footer.bk-main {
 /* Chapters */
 .bk-chapter h1 {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px; }
+  /*Left and Right margins must be larger than chapter nav links*/
+  margin: 30px 65px 40px 65px; }
+.bk-chapter .bk-chapnav {
+  margin-top: 7px;
+  width: 65px; }
+.bk-chapter .bk-chapnav-prev {
+  float: left; }
+.bk-chapter .bk-chapnav-next {
+  float: right;
+  text-align: right; }
 
 /* Theme */
 html {

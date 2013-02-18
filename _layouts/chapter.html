@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  {% include head.html  %}
+  <body>
+    <div class="bk-site_wrapper">
+      {% include header.html %}
+      <div class="bk-content {{ page.page_class }}">
+	{% if page.previous %}
+	  <a href="{{ page.previous.url }}" class="bk-chapnav bk-chapnav-prev">Previous</a>
+	{% endif %}
+	{% if page.next %}
+  	  <a href="{{ page.next.url }}" class="bk-chapnav bk-chapnav-next">Next</a>
+	{% endif %}
+
+	{{content}}
+
+	{% if page.previous %}
+	  <a href="{{ page.previous.url }}" class="bk-chapnav bk-chapnav-prev">Previous</a>
+	{% endif %}
+	{% if page.next %}
+  	  <a href="{{ page.next.url }}" class="bk-chapnav bk-chapnav-next">Next</a>
+	{% endif %}
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
